@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  application:
+    name: cloud-order
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: order
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30 #Eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认30秒）
+    lease-expiration-duration-in-seconds: 90 #Eureka服务端在收到最后一次心跳后等待时间上限，单位为秒（默认90秒），超时将剔除服务
