@@ -9,6 +9,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 public class ApplicationContextMain8004 {
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationContextMain8004.class);
+        SpringApplication.run(ApplicationContextMain8004.class,args);
     }
 }

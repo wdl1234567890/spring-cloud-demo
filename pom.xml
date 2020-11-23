@@ -11,12 +11,15 @@
   <modules>
     <module>order80</module>
     <module>eureka7001</module>
-    <module>payment8001</module>
-    <module>payment8002</module>
+    <module>payment-eureka-8001</module>
+    <module>payment-eureka-8002</module>
     <module>eureka7002</module>
-      <module>payment8003</module>
-      <module>order-zk80</module>
-      <module>payment-zk-8004</module>
+    <module>payment-zk-8003</module>
+    <module>order-zk80</module>
+    <module>payment-zk-8004</module>
+    <module>order-consul80</module>
+    <module>common</module>
+    <module>payment-consul-8006</module>
   </modules>
 
   <!-- 统一管理jar包版本 -->
@@ -103,6 +106,13 @@
           <fork>true</fork>
           <addResources>true</addResources>
         </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
     </plugins>
   </build>

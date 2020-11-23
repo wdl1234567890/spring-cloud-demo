@@ -9,14 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>payment-zk-8003</artifactId>
+    <artifactId>payment-consul-8006</artifactId>
 
     <dependencies>
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -26,12 +27,12 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-<!--                <dependency>-->
-<!--                    <groupId>org.springframework.boot</groupId>-->
-<!--                    <artifactId>spring-boot-devtools</artifactId>-->
-<!--                    <scope>runtime</scope>-->
-<!--                    <optional>true</optional>-->
-<!--                </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-devtools</artifactId>-->
+        <!--            <scope>runtime</scope>-->
+        <!--            <optional>true</optional>-->
+        <!--        </dependency>-->
 
         <dependency><!-- 引入自己定义的api通用包-->
             <groupId>com.fl.demo</groupId>
@@ -40,5 +41,4 @@
         </dependency>
 
     </dependencies>
-
 </project>

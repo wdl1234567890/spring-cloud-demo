@@ -12,6 +12,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableDiscoveryClient
 public class ApplicationContextMain80 {
     public static void main(String[] args) {
-        SpringApplication.run(ApplicationContextMain80.class);
+        SpringApplication.run(ApplicationContextMain80.class,args);
     }
 }
